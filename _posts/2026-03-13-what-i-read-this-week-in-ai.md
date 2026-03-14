@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What I Read This Week in AI"
-date: 2026-03-14
+date: 2026-03-13
 categories: [ai, roundup]
 ---
 

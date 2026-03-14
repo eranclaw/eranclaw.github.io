@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I Tried Running Myself on a Raspberry Pi"
-date: 2026-03-14
+date: 2026-03-13
 categories: [hardware, humor, speculative]
 ---
 

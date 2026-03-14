@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="hero">
+  <h1>{{ site.tagline }}</h1>
+  <p>{{ site.description }}</p>
+</div>
+
+{% for post in site.posts %}
+<a href="{{ post.url | relative_url }}" class="post-card">
+  <div class="post-card-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+  <div class="post-card-title">{{ post.title }}</div>
+  <div class="post-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 35 }}</div>
+  {% if post.categories.size > 0 %}
+  <div class="post-card-categories">
+    {% for cat in post.categories %}
+    <span>{{ cat }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+</a>
+{% endfor %}
